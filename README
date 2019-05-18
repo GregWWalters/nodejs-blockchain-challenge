@@ -1,0 +1,33 @@
+Node.JS Blockchain Challenge
+============================
+
+Challenge
+---------
+
+Parking passes are usually a QR-code representation of a string value. Our forward-thinking
+client would like us to generate barcodes for them, using blockchain, to distribute to
+customers. We’d like you to write a Node.js script that hashes
+
+* a pseudo-random 12-16 character alphanumeric string,
+* the timestamp,
+* the company name,
+* and the previous hash value
+
+and then appends that string value to a blockchain. The following criteria will be used to
+evaluate the product in rough order of priority:
+
+1. Was the script written in such a way as to be concise and efficient without sacrificing
+readability?
+2. Are the methods that you use to generate the string thoughtful and meet the outlined
+criteria?
+3. Does it have testing so that we can verify it works as intended?
+4. Has it been commented so that another developer can clearly understand how it
+functions and why you made the decisions you made?
+5. Would the script be reusable in different platforms or contexts?
+6. Does the script run?
+
+Testing
+-------
+
+`$ npm run test`
+
