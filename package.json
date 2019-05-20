@@ -1,14 +1,15 @@
 {
   "name": "@gregwwalters/blockchain-challenge",
   "version": "0.0.0",
-  "description": "Hashes a pseudo-random 12-16 character alphanumeric string, the timestamp, the company name, and the previous hash value; then appends that string value to a blockchain.",
+  "description": "Hashes a pseudo-random 12-16 character string, the timestamp, the company name, and the previous hash value; then appends that string value to a blockchain.",
   "main": "lib/index.js",
   "scripts": {
-    "start": "forever ./lib/server.js",
+    "start": "forever ./lib/server/server.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "build": "docker build --rm -t blockchainchallenge"
   },
   "repository": {
     "type": "git",
