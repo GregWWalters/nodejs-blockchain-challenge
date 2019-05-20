@@ -4,8 +4,11 @@
   "description": "Hashes a pseudo-random 12-16 character alphanumeric string, the timestamp, the company name, and the previous hash value; then appends that string value to a blockchain.",
   "main": "lib/index.js",
   "scripts": {
+    "start": "forever ./lib/server.js",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -15,11 +18,14 @@
   "license": "MIT",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
     "jest": "^24.8.0"
   },
   "devDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "supertest": "^4.0.2"
   }
 }

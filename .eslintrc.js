@@ -3,7 +3,7 @@ module.exports = {
     'es6': 'true',
     'node': true,
   },
-  'extends': ['eslint:recommended', 'airbnb/base'],
+  'extends': ['eslint:recommended', 'airbnb-base'],
   'parserOptions': { 'sourceType': 'module' },
   'rules': {
     'max-len': ['error', {
@@ -12,6 +12,5 @@ module.exports = {
       'ignoreUrls': true,
       'ignoreRegExpLiterals': true,
     }],
-    'one-var': ['warn', 'consecutive'],
-  },
+ },
 };
